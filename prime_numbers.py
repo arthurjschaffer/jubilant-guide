@@ -24,6 +24,7 @@ def find_primes(upper_limit):
       count += 1
     candidate += 2
   return count
+
 # Check if the script was called with a
 # parameter. Use that as the upper limit
 # of numbers to search
@@ -36,13 +37,12 @@ else:
 startTime = datetime.datetime.now()
  
 # Start the process
-print("")
 print("Starting ...")
-print("")
 count = find_primes(upper_limit)
-print("")
+print('\n')
  
 # Measure and print the elapsed time
 elapsed=datetime.datetime.now()-startTime
-print(" Found %d primes in %s" %(count,elapsed))
-print("")
+print(" Found %d primes in %s \n" %(count,elapsed))
+
+# Success!
